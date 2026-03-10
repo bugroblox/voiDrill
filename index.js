@@ -41,8 +41,6 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: false}));
 app.use('/', router);
 app.get("/", async (req, res) => {
-	console.log("page hit");
-	res.send("hello");
 });
 
 app.listen(port, () => {
