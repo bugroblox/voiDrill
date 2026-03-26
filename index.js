@@ -40,7 +40,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: false}));
 app.use('/', router);
-app.get("/", async (req, res) => {
+app.get("/title", async (req, res) => {
 });
 
 app.listen(port, () => {
